@@ -155,3 +155,5 @@ Le fichier nouveau n'est pas modifiable après avoir retiré les droits en écri
 - chmod uo+w,g-rx fic en sachant que les droits initiaux de fic sont r--r-x--- équivaut à chmod 602
 - chmod 653 fic en sachant que les droits initiaux de fic sont 711 équivaut à chmod u-x, g+r, o+w fic
 - chmod u+x,g=w,o-r fic en sachant que les droits initiaux de fic sont r--r-x--- équivaut à chmod 520 fic
+
+14. Pour afficher les droits d'un fichier on exécute la commande `ll /usr/bin/passwd`. Ici les droits sur le fichier passwd sont `rwxr-xr-x`, c'est à dire que le propriétaire du fichier a tous les droits tandis que les membres du groupe et les autres ont uniquement les droits de lecture et d'exécution. En considérant que c'est un fichier de gestion des mots de passe, il est normal que seul le propriétaire puisse le modifier.
